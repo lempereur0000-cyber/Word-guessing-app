@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WordQuest: Temperature Challenge</title>
-  <link rel="stylesheet" href="style.css">
-</head>
 <body>
 
   <h1>WORDQUEST: TEMPERATURE CHALLENGE</h1>
@@ -18,6 +10,27 @@
 
   <p id="instructions">Guess the secret 6-letter word!</p>
 
+  <form id="guess-form">
+    <input 
+      type="text" 
+      id="guess-input" 
+      placeholder="Enter guess..." 
+      maxlength="6" 
+      required 
+      autocomplete="off"
+    >
+    <button type="submit" id="submit-btn">Submit Guess</button>
+  </form>
+
+  <div id="temperature-container">
+    <p>Temperature:</p>
+    <div id="temperature-bar-bg">
+      <div id="temperature-bar"></div>
+    </div>
+    <p id="temperature-label">Cold</p>
+  </div>
+
+  <p id="status-message"></p>
+
   <script src="script.js"></script>
 </body>
-</html>
