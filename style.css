@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f4f7f6;
+  color: #333;
+  padding: 20px;
+}
+
+h1 {
+  color: #2c3e50;
+}
+
+#game-info {
+  background-color: #ffffff;
+  border-radius: 8px;
+  display: inline-block;
+  padding: 10px 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#guess-form {
+  margin: 20px 0;
+}
+
+#guess-input {
+  font-size: 18px;
+  padding: 8px 12px;
+  text-transform: uppercase;
+  width: 180px;
+  text-align: center;
+}
+
+#submit-btn, #restart-btn {
+  font-size: 18px;
+  padding: 8px 16px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#submit-btn:hover, #restart-btn:hover {
+  background-color: #2980b9;
+}
+
+#temperature-container {
+  margin-top: 25px;
+}
+
+#temperature-bar-bg {
+  width: 250px;
+  height: 24px;
+  background-color: #ddd;
+  border-radius: 12px;
+  margin: 10px auto;
+  overflow: hidden;
+}
+
+#temperature-bar {
+  width: 10%;
+  height: 100%;
+  background-color: #3498db;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+#status-message {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+}
